@@ -67,7 +67,7 @@ module outerShell(part = 1, th = 40, loc_res = 32) {
         if(part == 1) {
             // 1
             *translate([350/2-10, 270/2+10, -1])
-            cube([350/2, 270/2, th+2]);
+            cube([350/2, 270/2+1, th+2]);
             // 2
             translate([-10, 270/2+10, -1])
             cube([350/2, 270/2, th+2]);
@@ -80,7 +80,7 @@ module outerShell(part = 1, th = 40, loc_res = 32) {
         } else if(part == 2) {
             // 1
             translate([350/2-10, 270/2+10, -1])
-            cube([350/2, 270/2, th+2]);
+            cube([350/2, 270/2+1, th+2]);
             // 2
             *translate([-10, 270/2+10, -1])
             cube([350/2, 270/2, th+2]);
@@ -93,7 +93,7 @@ module outerShell(part = 1, th = 40, loc_res = 32) {
         } else if(part == 3) {
             // 1
             translate([350/2-10, 270/2+10, -1])
-            cube([350/2, 270/2, th+2]);
+            cube([350/2, 270/2+1, th+2]);
             // 2
             translate([-10, 270/2+10, -1])
             cube([350/2, 270/2, th+2]);
@@ -106,7 +106,7 @@ module outerShell(part = 1, th = 40, loc_res = 32) {
         } else { // if(part == 1) {
             // 1
             translate([350/2-10, 270/2+10, -1])
-            cube([350/2, 270/2, th+2]);
+            cube([350/2, 270/2+1, th+2]);
             // 2
             translate([-10, 270/2+10, -1])
             cube([350/2, 270/2, th+2]);
@@ -232,5 +232,5 @@ module innerSchell(part = 1, th = 40, loc_res = 32) {
     }
 }
 
-outerShell(1);
-*innerSchell(1);
+outerShell(4);
+innerSchell(4);
